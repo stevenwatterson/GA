@@ -18,16 +18,19 @@ Usage
  
 [x, fval, exitflag, output, population, scores] = ga (fitnessfcn, nvars, A, b, Aeq, beq, LB, UB, nonlcon, options)
 
-- exitflag has not been implemented
-- A, b.  The inequality A\*x<=b has not been implemented.  
-- Aeq, beq.  The equality Aeq\*x=beq has not been implemented.
-- nonlcon.  The nonlinear constraints have not been implemented.
-
+**Implemented**
 - fitnessfcn has been implemented.
 - nvars has been implemented.
 - LB has been implemented.
 - UB has been implemented.
 - options have been implemented. 
+
+**Not implemented**
+- exitflag
+- The inequality A\*x<=b.  
+- The equality Aeq\*x=beq.
+- The nonlinear constraints, *nonlcon*, have not been implemented.
+
 
 
 
