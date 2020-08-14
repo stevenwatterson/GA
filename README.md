@@ -11,7 +11,7 @@ Added features include:-
 - support of the 'OutputFcns' feature that enables a user defined function to be applied to the population at each generation. 
 
 Dependencies
-- The parallelization requires both the parallel (https://octave.sourceforge.io/parallel/) and the Optimization (https://octave.sourceforge.io/optim/) packages.  
+- The parallelization requires the parallel (https://octave.sourceforge.io/parallel/) package.  
 
 Usage
  - See https://octave.sourceforge.io/ga/function/ga.html However, not all the features listed in the sourceforge package have been implemented.
