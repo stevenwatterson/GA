@@ -18,9 +18,11 @@ Usage
  
 **gaoptimset**
 
-Example: options = gaoptimset('Generations', 80, 'PopulationSize', 16, 'InitialPopulation', IP, 'OutputFcns', myoutputfun, 'UseParallel', 'always', 'Vectorized', 'off');
+*Example*
 
-gaoptimset takes Parameter-Value pairs.
+options = gaoptimset('Generations', 80, 'PopulationSize', 16, 'InitialPopulation', IP, 'OutputFcns', myoutputfun, 'UseParallel', 'always', 'Vectorized', 'off');
+
+*Parameter-Value pairs*
 
 |Parameter|Value|Default|
 |---------|:----:|-----:|
