@@ -43,7 +43,7 @@ gaoptimset takes Parameter-Value pairs.
 |'Vectorized'|'on' or 'off|'off'|
 
 
-**GA**
+**ga**
 
 [x, fval, exitflag, output, population, scores] = ga (fitnessfcn, nvars, A, b, Aeq, beq, LB, UB, nonlcon, options)
 
