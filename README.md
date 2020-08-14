@@ -16,22 +16,46 @@ Dependencies
 Usage
  - See https://octave.sourceforge.io/ga/function/ga.html However, not all the features listed in the sourceforge package have been implemented.
  
+**gaoptimset**
+
+Example: options = gaoptimset('Generations', 80, 'PopulationSize', 16, 'InitialPopulation', IP, 'OutputFcns', myoutputfun, 'UseParallel', 'always', 'Vectorized', 'off');
+
+gaoptimset takes Parameter-Value pairs.
+
+|Parameter|Value|Default|
+|---------|:----:|-----:|
+|'CreationFcn'|UserDefinedFuncton|@gacreationuniform|
+|'CrossoverFcn'|UserDefinedFunction|@crossoverscattered|
+|'CrossoverFraction'|Decimal|0.8|
+|'EliteCount'|Integer|2|
+|'FitnessLimit'|Double|-Inf|
+|'FitnessScalingFcn'|UserDefinedFunction|@fitscalingrank|
+|'Generations'|Integer|200|
+|'InitialPopulation'|Array|[]|
+|'InitialScores'|Array|[]|
+|'MutationFcn'|{UserdefinedFunction, Scale, Shrink}|{@mutationgaussian, 1, 1}|
+|'OutputFcns'|UserDefinedFunction|[]|
+|'PopInitRange'|Array|[-10; 10]
+|'PopulationSize'|Integer|20|
+|'SelectionFcn'|UserDefinedFunction|@selectionstochunif|
+|'TimeLimit'|Double|Inf|
+|'UseParallel'|'always' or 'never'|'never'|
+|'Vectorized'|'on' or 'off|'off'|
+
+
+**GA**
+
 [x, fval, exitflag, output, population, scores] = ga (fitnessfcn, nvars, A, b, Aeq, beq, LB, UB, nonlcon, options)
 
-**Implemented**
+*Implemented*
 - fitnessfcn has been implemented.
 - nvars has been implemented.
 - LB has been implemented.
 - UB has been implemented.
 - options have been implemented. 
 
-**Not implemented**
+*Not implemented*
 - exitflag
 - The inequality A\*x<=b.  
 - The equality Aeq\*x=beq.
 - The nonlinear constraints, *nonlcon*, have not been implemented.
-
-
-
-
-
