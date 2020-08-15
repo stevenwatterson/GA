@@ -1,5 +1,5 @@
 # Genetic Algorithm for Octave
-An implementation of the Genetic Algorithm for GNU Octave that supports parallelisation and bounds.  
+An expansion of the Genetic Algorithm package for GNU Octave that supports parallelisation and bounds.  
 ---
 This is a fork of the GNU Octave GA package for genetic algorithms, found at https://octave.sourceforge.io/ga/
 
