@@ -3,7 +3,7 @@ An implementation of the Genetic Algorithm for GNU Octave that supports parallel
 ---
 This is a fork of the GNU Octave GA package for genetic algorithms, found at https://octave.sourceforge.io/ga/
 
-The offical version has been unmaintained for several years.  Here is a version of the package with an expanded feature set that we developed for a project.  This package does not perfectly implment the corresponding MATLAB package, but it implements most of the key features. 
+Here is a version of the package with an expanded feature set that we developed for a project.  This package does not perfectly implement the corresponding MATLAB package, but it implements most of the key features. 
 
 Added features include:-
 - supoort for parallelization, taking advantage of multicore/multithreaded architecture. 
@@ -50,14 +50,14 @@ options = gaoptimset('Generations', 80, 'PopulationSize', 16, 'InitialPopulation
 [x, fval, exitflag, output, population, scores] = ga (fitnessfcn, nvars, A, b, Aeq, beq, LB, UB, nonlcon, options)
 
 *Implemented*
-- fitnessfcn has been implemented.
-- nvars has been implemented.
-- LB has been implemented.
-- UB has been implemented.
-- options have been implemented. 
+- fitnessfcn.
+- nvars.
+- LB.
+- UB.
+- options. 
 
 *Not implemented*
 - exitflag
 - The inequality A\*x<=b.  
 - The equality Aeq\*x=beq.
-- The nonlinear constraints, *nonlcon*, have not been implemented.
+- The nonlinear constraints, *nonlcon*.
